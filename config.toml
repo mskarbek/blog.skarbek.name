@@ -13,9 +13,9 @@ canonifyURLS = true
   Subtitle = "suckin' at somethin' is the first step towards bein' sorta good at somethin'"
   GithubID = "mskarbek"
   TwitterID = "marcinskarbek"
-  #AnalyticsID = "Your Google Analytics tracking code"
+  #AnalyticsID = "UA-46765415-1"
   DisqusShortname = "skarbek-name"
-  Summary = false  # takes true or false
+  Summary = true  # takes true or false
   Content = false  # takes true or false
   # if both are set to true, summary is shown.
   FooterMsg = "Copyright Me 2018. Powered by Hugo."

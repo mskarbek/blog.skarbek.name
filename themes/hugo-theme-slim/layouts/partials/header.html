@@ -6,14 +6,11 @@
       <span class="ci ci-burger"></span>
     </a>
     <ul class="nav-list">
-      {{ range .Site.Menus.main }}
-      <li><a href="{{ .URL }}">{{ .Name }}</a></li>
-      {{end}} 
-	  <li class="spacer">&ac;</li>
-{{ with .Site.Params.GithubID }}
-      <li><a href="https://github.com/{{.}}">Github</a></li>{{ end }} {{ with .Site.Params.TwitterID }}
-      <li><a href="https://twitter.com/{{.}}">Twitter</a></li>{{ end }} {{ with .Site.Params.LinkedInID }}
-      <li><a href="http://linkedin.com/in/{{.}}">LinkedIn</a></li>{{ end }}
+      {{ range .Site.Menus.main }}<li><a href="{{ .URL }}">{{ .Name }}</a></li>{{end}}
+      <li class="spacer">&ac;</li>
+      {{ with .Site.Params.GithubID }}<li><a href="https://github.com/{{.}}">Github</a></li>{{ end }}
+      {{ with .Site.Params.TwitterID }}<li><a href="https://twitter.com/{{.}}">Twitter</a></li>{{ end }}
+      {{ with .Site.Params.LinkedInID }}<li><a href="http://linkedin.com/in/{{.}}">LinkedIn</a></li>{{ end }}
     </ul>
   </div>
 </div>
